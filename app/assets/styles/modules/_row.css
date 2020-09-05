@@ -1,0 +1,45 @@
+.row{
+ 
+@mixin clearFix {}
+
+&__b-margin-until-md{
+        margin-bottom: 1rem;
+}
+
+@mixin atMedium {
+    &__b-margin-until-md{
+        margin-bottom: 0rem;
+}
+    &__col-md-4{
+        float: left;
+        width: 33.33%;
+    }
+
+    &__col-md-4--wider{
+        width: 37%;
+    }
+
+
+    &__col-md-8{
+        float: left;
+        width: 66.66%;
+    }
+
+    &__col-md-8--smaller{
+        width: 63%;
+    }
+}
+  
+
+    &--gutters{
+        margin-right: -65px;
+    }
+
+    &--gutters > div{
+        padding-right: 65px;
+       
+    }
+
+    
+
+}
