@@ -11,4 +11,32 @@
     color: #fff;
 }
 
+
+ &--testi{
+
+    background-color: #e0e6ef;
+    @mixin atLarge {
+        background : url('assets/images/testimonials-bg.jpg') center top no-repeat;
+    background-size: cover;
+    }
+}
+
+    &--no-b-padding-until-md{
+        padding-bottom: 0;
+       
+        @mixin atMedium {
+            padding: 4.5rem 0;
+        }
+    }
+
+    &--no-b-padding-until-lg{
+        padding-bottom: 0;
+       
+        @mixin atLarge {
+            padding: 4.5rem 0;
+        }
+    }
+   
+
+
 }
