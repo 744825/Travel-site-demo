@@ -8,6 +8,7 @@
 
 &--blue{
     background-color: $mainBlue;
+    color: #fff;
 }
 
 }
