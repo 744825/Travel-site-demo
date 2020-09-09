@@ -7,6 +7,7 @@
   },
   "dependencies": {
     "autoprefixer": "^9.8.6",
+    "lazysizes": "^5.2.2",
     "lodash": "^4.17.20",
     "normalize.css": "^8.0.1",
     "postcss-nested": "^4.2.3",
