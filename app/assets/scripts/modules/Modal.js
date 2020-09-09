@@ -3,7 +3,6 @@
                         this.injectHtml()
                     this.modal = document.querySelector(".modal")
                     this.closeIcon = document.querySelector(".modal__close")
-                    this.openModalButtons = document.querySelectorAll(".open-modal")
                     this.events()
 
         }
@@ -11,7 +10,7 @@
 
         events(){
             //listen for ioopenin click
-            this.openModalButtons.forEach(btn => btn.addEventListener("click", e => this.openTheModal(e)))
+    // handled by app.js
 
 
             //llsiten for close click
@@ -30,8 +29,7 @@
         }
 
 
-        openTheModal(e){
-                e.preventDefault()
+        openTheModal(){
                 this.modal.classList.add("modal--is-visible")
         }
 
