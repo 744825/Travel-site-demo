@@ -19,7 +19,7 @@ events (){
 sendRequest(){
  Axios.post("https://silly-allen-5569fd.netlify.app/.netlify/functions/secret-area", {password :this.field.value}).then((res)=>{
     this.form.remove()
-    this.contentArea.innerHTML = response.data
+    this.contentArea.innerHTML = res.data
  }).catch(()=>{
      this.contentArea.innerHTML = `<p class="client-area__error">That secret pharse is not correct</p>`
      this.field.value= ""
