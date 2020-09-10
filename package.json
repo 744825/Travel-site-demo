@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "autoprefixer": "^9.8.6",
+    "axios": "^0.20.0",
     "lazysizes": "^5.2.2",
     "lodash": "^4.17.20",
     "normalize.css": "^8.0.1",

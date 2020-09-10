@@ -1,0 +1,15 @@
+.client-area {
+    padding: 60px;
+
+    &__form{
+        display: flex;
+    }
+
+    &__input {
+        flex: 1;
+    }
+
+    &__error {
+        color :red;
+    }
+}
