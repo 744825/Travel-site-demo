@@ -5,12 +5,19 @@ import StickyHeader from './modules/StickyHeader'
 import "lazysizes"
 import ClientArea from "./modules/ClientArea"
 
+import UploadProcess from "./modules/FileUploader"
+
 new ClientArea()
 
 let stickyHeader = new StickyHeader()
 new RevealOnScroll(document.querySelectorAll(".feature-item"), 75)
 new RevealOnScroll(document.querySelectorAll(".testimonial"), 60)
 let mobileMenu = new MobileMenu();
+
+document.getElementById("upload").addEventListener("click", UploadProcess)
+
+
+
 
 let modal 
 document.querySelectorAll(".open-modal").forEach((el)=>el.addEventListener("click", e => {
